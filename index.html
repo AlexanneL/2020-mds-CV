@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <title>Alexanne Lemaile</title>
     <head>
-  <style> 
-body {
-  		background-color: black;
-  	}
-  	 
-body { color :white;
-  	}
-.contenu1 {color : white;
+  <style>
+
+.wrapper {
+	  display: grid;
+	  grid-template-columns: repeat(8, 1fr);
+	  grid-gap: 10px;
+	  grid-auto-rows: 10px;
+	  grid-template-areas: 
+	    "a a a a b b b b"
+	    "a a a a b b b b"
+	    "c c c c d d d d";
+	  align-items: baseline;
 	}
-	.contenu2 {color : white;
+	.element1 {
+	  grid-area: a;
 	}
-	.contenu3 {color : white;
+	.element2 {
+	  grid-area: b;
+	}
+	.element3 {
+	  grid-area: c;
+	}
+	.box {
+		background-color: black;
 	}
   	 </style>
   </head>
@@ -23,14 +35,19 @@ body { color :white;
   	<h1 class= "sous titre">Alexanne Lemaile</h1>
 
 </a>
-<body> 
   	<div> 
   		Community Manager  
   		<div> 
  </style>
   </head>
 <body>
-<h1 class= "contenu1">Mes expériences</h1>
+		<div class="wrapper">
+	  <div class="box element1">1</div>
+
+	  <!-- <div class="box e">E</div>
+	  <div class="box f">F</div> -->
+	</div>
+<h1 class= "element1">Mes expériences</h1>
 <div>
 	- Community Manager - Agence Maga Communication (2019/2020, Saint-Herblain)
 	<div>
@@ -47,7 +64,8 @@ body { color :white;
 </style>
   </head>
 <body>
-<h1 class= "contenu2">Mes compétences</h1>
+	  <div class="box element2">2</div>
+<h1 class= "element2">Mes compétences</h1>
 <div>
 	- Formation aux premiers secours (juin 2014)
 	<div> 
@@ -61,7 +79,8 @@ body { color :white;
 	- Savoir-être 
 	<div>
 <body>
-<h1 class= "contenu3">Ma formation</h1>
+<h1 class= "element3">Mes études</h1>
+<div class="box element3">3</div>
 <div> 
 	- Bachelor 3 Webmarketing et Social Media (2019/2020, My Digital School Nantes)
 	<div> 
@@ -71,7 +90,11 @@ body { color :white;
 <div>
  <li>
   	<button><a href="mailto:alexannelemaile@gmail.com">Contactez-moi</a>
+
 <div>
 Instagram : @alexannelemaile
 Twitter @alexannelm
 LinkedIn : Alexanne Lemaile 
+</div>
+
+</body> 
