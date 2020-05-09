@@ -6,23 +6,30 @@
     <head>
   <style>
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}
-.one {
-  grid-column: 1 / 3;
-  grid-row: 1;
-}
-.two { 
-  grid-column: 2 / 4;
-  grid-row: 1 / 3;
-}
-.three {
-  grid-column: 1;
-  grid-row: 2 / 5;
-	    </style>
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 10px;
+    grid-template-areas: 
+      "a a a a b b b b"
+      "a a a a b b b b"
+      "c c c c d d d d";
+    align-items: baseline;
+  }
+  .element1 {
+    grid-area: a;
+  }
+  .element2 {
+    grid-area: b;
+  }
+  .element3 {
+    grid-area: c;
+  }
+  .box {
+    background-color: black;
+  }
+     </style>
+
   </head>
   <body> 	 
   	<h1 class= "sous titre">Alexanne Lemaile</h1>
