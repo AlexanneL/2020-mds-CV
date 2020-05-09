@@ -5,12 +5,16 @@
     <head>
   <style>
 
-.one {display: grid;
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+.one { 
+grid-column: 1 / 2;
+ grid-row: 1;}
+
 .two { 
-grid-column: 1 / 4;
+grid-column: 1 / 2;
 grid-row: 1; }
 
 .tree {
@@ -35,7 +39,7 @@ grid-row: 1; }
 <div class="wrapper">
  <div class="one">
    <img
-    src="img/moi.png" class="photoprofil"></img>
+    src="img/moi.png" class="photoprofil">
   <div> 
 	<p>Alexanne Lemaile</p>
     <p>Community Manager</p> 
