@@ -5,19 +5,34 @@
     <head>
   <style>
 
-.wrapper {}
+.wrapper {display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.two { 
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;}
   
-.photoprofil {width: 10%} 
-.reseau1 {width: 3%}
-.reseau2 {width: 3%}
-.reseau3 {width: 2.5%}
-.reseau4 {width: 2%}
+.photoprofil {width: 10%;} 
+.reseau1 {width: 3%;}
+.reseau2 {width: 3%;}
+.reseau3 {width: 2.5%;}
+.reseau4 {width: 2%;}
 
   	 </style>
   </head>
   <body> 	 
 <img
-    src="img/moi.png" class=photoprofil>
+    src="img/moi.png" class="photoprofil">
  	<div> 
 	Alexanne Lemaile
 	<div> 
@@ -27,30 +42,27 @@
 alexannelemaile@gmail.com
 <div>
 	<img
-    src="img/instagram.jpg" class=reseau1>
+    src="img/instagram.jpg" class="reseau1">
 	<div> 
 @alexannelemaile 
 
 <div>
 <img
-    src="img/linkedin.png" class=reseau2>	
+    src="img/linkedin.png" class="reseau2">	
 Alexanne Lemaile 
 <div>
 
 <div>
 <img
-    src="img/pinterest.png" class=reseau3>
+    src="img/pinterest.png" class="reseau3">
 alexannelaCM
 <div>
 	<img
-    src="img/twitter.png" class=reseau4>
+    src="img/twitter.png" class="reseau4">
 	<div> 
 alexannelm
 <div> 
 
- </style>
-  </head>
-<body>
 		<div class="wrapper">
 	  <div class="box element1">1</div>
 
